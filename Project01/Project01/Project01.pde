@@ -10,10 +10,10 @@
 
 // Define Variables and Functions Here
 
-// Triangle Shape
-void triangle(int x1, int y1, int x2, int y2, int x3, int y3){
- triangle(x1, y1, x2, y2, x3, y3); 
-}
+
+ 
+
+
 // Square Shape
 void square(float x, float y, float w){
   rect(x, y, w, w);
@@ -78,34 +78,38 @@ void stickFigure(int x, int y, int s){
 }
 void skyscraper(int x, int y, int s){
   // Structure
+  stroke(0, 0, 0);
   fill(0, 0, 0);
  rect(x, y, 8*s, 25*s);
  
  //Many Windows
- fill(255,255,255);
+ fill(255,255,255, 125);
 square(x+0.4*s, y+0.5*s, 1.5*s);
 square(x+3.1*s, y+0.5*s, 1.5*s);
 square(x+5.8*s, y+0.5*s, 1.5*s);
-
+fill(200, 30, 175, 125);
 
 square(x+0.4*s, y+4*s, 1.5*s);
 square(x+3.1*s, y+4*s, 1.5*s);
 square(x+5.8*s, y+4*s, 1.5*s);
 
-
+fill(200, 200, 80, 125);
 square(x+0.4*s, y+7.5*s, 1.5*s);
 square(x+3.1*s, y+7.5*s, 1.5*s);
 square(x+5.8*s, y+7.5*s, 1.5*s);
 
+fill(255, 0, 255, 125);
 
 square(x+0.4*s, y+11*s, 1.5*s);
 square(x+3.1*s, y+11*s, 1.5*s);
 square(x+5.8*s, y+11*s, 1.5*s);
 
+fill(0, 0, 255, 125);
 square(x+0.4*s, y+14.5*s, 1.5*s);
 square(x+3.1*s, y+14.5*s, 1.5*s);
 square(x+5.8*s, y+14.5*s, 1.5*s);
 
+fill(0, 255, 0, 125);
 square(x+0.4*s, y+18*s, 1.5*s);
 square(x+3.1*s, y+18*s, 1.5*s);
 square(x+5.8*s, y+18*s, 1.5*s);
@@ -124,27 +128,32 @@ fill(125,125,125);
 arc(x+4*s,y,8*s,6*s,PI ,2*PI);
 
 
-// Spire
-fill(0,0,0);
+// Beacons
+fill(251,255,52);
+stroke(251,255,52);
 
   
-triangle(x+3*s, y-6*s, x+5*s, y-6*s, x+4*s, y-3*s);
+triangle(x+3*s, y-10*s, x+5*s, y-10*s, x+4*s, y-2*s);
 
 
+triangle(x+7*s, y-10*s, x+9*s, y-10*s, x+4*s, y-2*s);
 
+triangle(x+11*s, y-10*s, x+13*s, y-10*s, x+4*s, y-2*s); 
 
- 
+triangle(x-1*s, y-10*s, x+1*s, y-10*s, x+4*s, y-2*s);
+
+triangle(x-3*s, y-10*s, x-5*s, y-10*s, x+4*s, y-2*s);
   
 }
 
 void setup() {
   size(600, 400);
-  background(200,200,200);
+  background(255, 255, 255);
 }
 
 void draw() {
-  background(200, 200, 200);
+  background(255, 255, 255);
  skyscraper(250, 100, 10);
- stickFigure(500, 100, 10);
+ stickFigure(350, 325, 7);
 
 }
